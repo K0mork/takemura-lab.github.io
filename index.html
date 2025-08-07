@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Human Sensing Group</title>
-    <meta name="google-site-verification" content="JqTTeU_BPWVaRPeui_EWrRzub7JWGnLYLOZdra0Y6aA" />
-    <meta name="description" content="東海大学 竹村研究室の公式ホームページです．ヒューマンインタフェースへの応用を目指したセンシング技術の研究を行っています．">
-    <meta name="keywords" content="東海大学, 竹村研究室, 研究室, 研究, 情報, ヒューマンインタフェース, センシング, ヒューマンセンシング, eye-tracking, contact sensing">
-    <link rel="stylesheet" href="./tailwind.min.css">
+    <!-- Content will be loaded from head.html -->
 </head>
 <body class="bg-white-100 text-gray-900">
     <!-- メニューを読み込む場所 -->
@@ -39,31 +33,6 @@
         </section>
     </main>
 
-    <footer class="bg-gray-400 text-white text-center py-4 mt-10">
-        <p>&copy; Human Sensing Group 2025</p>
-    </footer>
-    <script>
-        // JavaScriptでheader.htmlを読み込む
-        fetch('header.html')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.text();
-            })
-            .then(data => {
-                document.getElementById('header-placeholder').innerHTML = data;
-
-                // ハンバーガーメニューの開閉を制御
-                const menuToggle = document.getElementById('menu-toggle');
-                const mobileMenu = document.getElementById('mobile-menu');
-                if (menuToggle && mobileMenu) {
-                    menuToggle.addEventListener('click', () => {
-                        mobileMenu.classList.toggle('hidden');
-                    });
-                }
-            })
-            .catch(error => console.error('Error loading header:', error));
-    </script>
+    <div id="footer-placeholder"></div>
 </body>
 </html>
